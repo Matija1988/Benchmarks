@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-using Benchmark;
+using Benchmark.Sortings;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Reports;
@@ -9,7 +9,7 @@ using BenchmarkDotNet.Running;
 using System.Text;
 
 
-var results = BenchmarkRunner.Run<IntArrayVsIntList>();
+var results = BenchmarkRunner.Run<IntSorting>();
 
 
 [MemoryDiagnoser]
