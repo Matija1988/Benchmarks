@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using Benchmark.CollectionsBenchmark;
 using Benchmark.Sortings;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
@@ -9,7 +10,7 @@ using BenchmarkDotNet.Running;
 using System.Text;
 
 
-var results = BenchmarkRunner.Run<IntSorting>();
+var results = BenchmarkRunner.Run<Collections>();
 
 
 [MemoryDiagnoser]
@@ -20,7 +21,7 @@ public class Demo
     {
         string output = "";
 
-        for(int i = 0; i <100 ; i++) 
+        for(int i = 0; i <10000 ; i++) 
         {
             output += i;
         }
@@ -32,7 +33,7 @@ public class Demo
     { 
         StringBuilder output = new StringBuilder();
 
-        for(int i = 0; i < 100 ; i++) 
+        for(int i = 0; i < 10000; i++) 
         {
             output.Append(i);
             

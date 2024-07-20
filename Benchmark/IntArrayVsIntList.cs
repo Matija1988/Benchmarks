@@ -10,7 +10,7 @@ namespace Benchmark
     [MemoryDiagnoser]
     public class IntArrayVsIntList
     {
-        [Params(10, 50, 100)]
+        [Params(10, 50, 100, 1000, 10000, 100000, 1000000)]
         public int Count;
 
         [Benchmark]

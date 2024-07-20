@@ -16,7 +16,7 @@ namespace Benchmark.Sortings
             Numbers = PopulateArray();
             Sorter = new IntSorts();
         }
-        [Params(100, 250, 500)]
+        [Params(100, 250, 500, 1000, 10000, 100000, 1000000)]
         public int Count;
 
 
@@ -31,7 +31,7 @@ namespace Benchmark.Sortings
 
             for (int i = 0; i < Count; i++)
             {
-                numbers[i] = Rnd.Next(-10, 11);
+                numbers[i] = Rnd.Next(-100000, 110000);
             }
             return numbers;
         }
