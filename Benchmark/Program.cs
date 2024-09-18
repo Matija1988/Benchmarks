@@ -2,6 +2,7 @@
 
 
 using Benchmark.CollectionsBenchmark;
+using Benchmark.Search;
 using Benchmark.Sortings;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
@@ -10,7 +11,9 @@ using BenchmarkDotNet.Running;
 using System.Text;
 
 
-var results = BenchmarkRunner.Run<Collections>();
+//var results = BenchmarkRunner.Run<Collections>();
+
+var results = BenchmarkRunner.Run<SearchMain>();
 
 
 [MemoryDiagnoser]

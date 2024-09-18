@@ -51,7 +51,7 @@ namespace Benchmark.CollectionsBenchmark
             {
                 var id = person?.Id + 1;
             }
-
+         
         }
 
         [Benchmark]
