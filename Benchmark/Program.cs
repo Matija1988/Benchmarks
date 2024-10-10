@@ -13,7 +13,7 @@ using System.Text;
 
 //var results = BenchmarkRunner.Run<Collections>();
 
-var results = BenchmarkRunner.Run<SearchMain>();
+var results = BenchmarkRunner.Run<Collections>();
 
 
 [MemoryDiagnoser]
