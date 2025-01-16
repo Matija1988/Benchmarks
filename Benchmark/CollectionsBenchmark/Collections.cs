@@ -30,7 +30,7 @@ namespace Benchmark.CollectionsBenchmark
 
 
         [GlobalSetup]
-        public void Setup ()
+        public void Setup()
         {
             _personList = DataProvider.GeneratePersons(Count);
             _personsImmuList = DataProvider.GeneratePersons(Count).ToImmutableList();

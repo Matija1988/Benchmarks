@@ -2,6 +2,7 @@
 
 
 using Benchmark.CollectionsBenchmark;
+using Benchmark.LINQSpecialised;
 using Benchmark.Search;
 using Benchmark.Sortings;
 using BenchmarkDotNet.Attributes;
@@ -13,7 +14,7 @@ using System.Text;
 
 //var results = BenchmarkRunner.Run<Collections>();
 
-var results = BenchmarkRunner.Run<Collections>();
+var results = BenchmarkRunner.Run<LINQGetLastID>();
 
 
 [MemoryDiagnoser]
